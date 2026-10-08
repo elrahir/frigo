@@ -1,0 +1,309 @@
+// Bombay'ın piksel çizimleri: her poz 22×8 piksel, yan pozlar sağa bakar
+// (sola bakış aynalanır). Bir piksel kare: terminalde yarım hücre (▀▄),
+// masaüstünde bir SVG karesi.
+//
+//   .  boş        k  siyah tüy     g  parlak tüy
+//   y  sarı göz   c  kapalı göz    n  pembe (burun, dil)
+//
+// Eşyalar (mama kabı, yumak) ayrı çizilir: b kap, B kabın gölgesi, f mama,
+// r yumak, R yumağın ipi.
+
+export const POSE_W = 22
+export const POSE_H = 8
+
+export const POSES = {
+  // Önden oturuş: kuyruk iki hâlde sallanır.
+  sit: `
+.......k.....k........
+.......kk...kk........
+.......kkgkkkkk.......
+.......kyykyyk........
+.......kkknkkk........
+........kkkkk...k.....
+.......kkkkkkk.k......
+.......kkkkkkkkk......`,
+  sitFlick: `
+.......k.....k........
+.......kk...kk........
+.......kkgkkkkk.......
+.......kyykyyk...k....
+.......kkknkkk...k....
+........kkkkk...k.....
+.......kkkkkkk.k......
+.......kkkkkkkkk......`,
+  yawn: `
+.......k.....k........
+.......kk...kk........
+.......kkgkkkkk.......
+.......kcckcck........
+.......kknnnkk........
+........kknkk...k.....
+.......kkkkkkk.k......
+.......kkkkkkkkk......`,
+  groom: `
+.......k.....k........
+.......kk...kk........
+.......kkgkkkkk.......
+.......kcckcck........
+......kkkknkkk........
+.....kkkkkkkk...k.....
+.......kkkkkkk.k......
+.......kkkkkkkkk......`,
+  groomLick: `
+.......k.....k........
+.......kk...kk........
+.......kkgkkkkk.......
+.......kcckcck........
+......kkkkkkkk........
+.....kkkkknkk...k.....
+.......kkkkkkk.k......
+.......kkkkkkkkk......`,
+
+  // Yandan duruş ve yürüyüş (dört kare).
+  stand: `
+..k............k..k...
+..k............kkkkk..
+...k...........kkkyk..
+...kkggkkkkkkkkkkkkkn.
+....kkkkkkkkkkkkkkkk..
+....kkkkkkkkkkkkkk....
+....kk.kk....kk.kk....
+....k...k....k...k....`,
+  walk1: `
+..k............k..k...
+..k............kkkkk..
+...k...........kkkyk..
+...kkggkkkkkkkkkkkkkn.
+....kkkkkkkkkkkkkkkk..
+....kkkkkkkkkkkkkk....
+...kk...kk..kk...kk...
+..k.......k.k......k..`,
+  walk2: `
+..k............k..k...
+..k............kkkkk..
+...k...........kkkyk..
+...kkggkkkkkkkkkkkkkn.
+....kkkkkkkkkkkkkkkk..
+....kkkkkkkkkkkkkk....
+.....kkk......kkk.....
+.....k.k......k.k.....`,
+  walk3: `
+..k............k..k...
+..k............kkkkk..
+...k...........kkkyk..
+...kkggkkkkkkkkkkkkkn.
+....kkkkkkkkkkkkkkkk..
+....kkkkkkkkkkkkkk....
+....kk.kk....kk.kk....
+....k...k....k...k....`,
+  walk4: `
+..k............k..k...
+..k............kkkkk..
+...k...........kkkyk..
+...kkggkkkkkkkkkkkkkn.
+....kkkkkkkkkkkkkkkk..
+....kkkkkkkkkkkkkk....
+......kk.......kk.....
+.....k..k.....k..k....`,
+
+  // Koşu (zoomies): uzanmış ve toplanmış iki kare.
+  runOut: `
+...............k..k...
+k..............kkkkk..
+.k.............kkkyk..
+..kkggkkkkkkkkkkkkkkn.
+...kkkkkkkkkkkkkkkkk..
+..kk.kkkkkkkkkkkk.kkk.
+.kk................kk.
+k...................kk`,
+  runIn: `
+......................
+................k..k..
+.kk.....kkkkk...kkkkk.
+...kkkkkggkkkkkkkkkyk.
+....kkkkkkkkkkkkkkkkkn
+.....kkkkkkkkkkkkkk...
+.........kkkkk........
+........k.k..k.k......`,
+
+  // Oyun: pusu (popo sallanır), sıçrayış, pati atma.
+  crouch: `
+......................
+......................
+.kk...................
+...kkkkk..........k...
+...kkggkkkkkkkk...kkkk
+..kkkkkkkkkkkkkkkkkkyk
+..kk.kkkkkkkkkkkkkkkkn
+..k....k.....kkkkk....`,
+  crouchWiggle: `
+......................
+......................
+..kk..................
+...kkkkk..........k...
+....kggkkkkkkkk...kkkk
+...kkkkkkkkkkkkkkkkkyk
+..kk.kkkkkkkkkkkkkkkkn
+...k...k.....kkkkk....`,
+  pounce: `
+...................k.k
+k.................kkkk
+.k....kkggkkkkkkkkkkyk
+..kkkkkkkkkkkkkkkkkkkn
+....kkkkkkkkkkkkkkkk..
+...kk..............kk.
+..k..................k
+......................`,
+  bat: `
+......................
+......................
+.kk...................
+...kkkkk..........k..k
+...kkggkkkkkkkk...kkkk
+..kkkkkkkkkkkkkkkkkkyk
+..kk.kkkkkkkkkkkkkkkkn
+..k....k.....kkk..kkkk`,
+
+  // Mama: başı kaba eğik, iki çiğneme karesi.
+  eat: `
+......................
+..k...................
+..k...................
+...kkggkkkkkkkk.......
+....kkkkkkkkkkkkk.k..k
+....kkkkkkkkkkkkkkkkkk
+....kk.kk....kkkkkkcck
+....k...k....k..kkkkkn`,
+  eatChew: `
+......................
+..k...................
+..k...................
+...kkggkkkkkkkk.......
+....kkkkkkkkkkkkkk...k
+....kkkkkkkkkkkkkkkkkk
+....kk.kk....kkkkkkkkk
+....k...k....k..kkkcck`,
+
+  // Yatış: uyanık somun, uyku, gerinme.
+  loaf: `
+......................
+......................
+......................
+...............k...k..
+......kkkggkkkkkkkkkk.
+....kkkkkkkkkkkkkkykkk
+...kkkkkkkkkkkkkkkkkkn
+..kkkkkkkkkkkkkkkkkkk.`,
+  sleep: `
+......................
+......................
+......................
+...............k...k..
+......kkkggkkkkkkkkkk.
+....kkkkkkkkkkkkkkcckk
+...kkkkkkkkkkkkkkkkkkk
+..kkkkkkkkkkkkkkkkkkk.`,
+  // Uykuda nefes (sırt bir piksel kalkar) ve kulak seğirmesi.
+  sleepBreath: `
+......................
+......................
+......................
+........kkkkk..k...k..
+......kkkggkkkkkkkkkk.
+....kkkkkkkkkkkkkkcckk
+...kkkkkkkkkkkkkkkkkkk
+..kkkkkkkkkkkkkkkkkkk.`,
+  sleepEar: `
+......................
+......................
+......................
+...............k....k.
+......kkkggkkkkkkkkkk.
+....kkkkkkkkkkkkkkcckk
+...kkkkkkkkkkkkkkkkkkk
+..kkkkkkkkkkkkkkkkkkk.`,
+  stretch: `
+......................
+.k....................
+..k...................
+..kkkkk...............
+...kkggkkk.........k..
+...k..kkkkkkkkkkkkkkkk
+...k.....kkkkkkkkkkkyk
+...k........kkkkkkkkkn`,
+
+  // Ürkme: sırt kamburu, kuyruk dimdik.
+  arch: `
+..k......kkkkk........
+..k....kkkkkkkkk......
+..k...kkggkkkkkkk.k..k
+..k..kkk.......kkkkkkk
+...kkkk.........kkykyk
+...kk............kkkkn
+...k..............k.k.
+...k..............k.k.`,
+} as const
+
+export type PoseName = keyof typeof POSES
+
+/** Mama kabı, doluluk 0..3. */
+export const BOWL = [
+  `
+......
+bbbbbb
+.BBBB.`,
+  `
+..f...
+bbbbbb
+.BBBB.`,
+  `
+.ff.f.
+bbbbbb
+.BBBB.`,
+  `
+.ffff.
+bbbbbb
+.BBBB.`,
+] as const
+
+export const BALL = `
+.r.
+rRr
+.r.`
+
+/** Satır listesi; boş satır ve kenar boşlukları atılır. */
+export function rows(art: string): string[] {
+  return art.split('\n').filter(line => line.length > 0)
+}
+
+export type Pixel = { x: number; y: number; c: string }
+
+export function pixels(art: string, flip = false, width = POSE_W): Pixel[] {
+  const out: Pixel[] = []
+  rows(art).forEach((line, y) => {
+    for (let x = 0; x < line.length; x++) {
+      const c = line[x]
+      if (c === undefined || c === '.') continue
+      out.push({ x: flip ? width - 1 - x : x, y, c })
+    }
+  })
+  return out
+}
+
+/** Gözleri kapatır (göz kırpma). */
+export function blink(art: string): string {
+  return art.replace(/y/g, 'c')
+}
+
+/** Siyah kediyi koyu zeminde seçilir kılan dış kontur: gövdeye komşu boşluklar. */
+export function outline(body: Pixel[]): Array<{ x: number; y: number }> {
+  const taken = new Set(body.map(p => `${p.x},${p.y}`))
+  const out = new Map<string, { x: number; y: number }>()
+  for (const p of body) {
+    for (const [dx, dy] of [[1, 0], [-1, 0], [0, 1], [0, -1]] as const) {
+      const key = `${p.x + dx},${p.y + dy}`
+      if (!taken.has(key)) out.set(key, { x: p.x + dx, y: p.y + dy })
+    }
+  }
+  return [...out.values()]
+}

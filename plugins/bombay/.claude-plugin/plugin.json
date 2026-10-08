@@ -1,0 +1,9 @@
+{
+  "name": "bombay",
+  "version": "0.2.0",
+  "description": "A black Bombay cat with yellow eyes lives above the prompt: mostly naps (breathing, ear twitches), now and then plays with its yarn, eats, runs, and chases Claude's star",
+  "author": {
+    "name": "elrahir"
+  },
+  "types": "./types/index.d.ts"
+}

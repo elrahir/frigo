@@ -1,0 +1,14 @@
+{
+  "name": "frigo",
+  "owner": {
+    "name": "elrahir"
+  },
+  "description": "Claude Code mods by elrahir",
+  "plugins": [
+    {
+      "name": "bombay",
+      "source": "./plugins/bombay",
+      "description": "A black Bombay cat with yellow eyes lives above the prompt: mostly naps (breathing, ear twitches), now and then plays with its yarn, eats, runs, and chases Claude's star"
+    }
+  ]
+}
