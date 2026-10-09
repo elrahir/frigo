@@ -34,13 +34,14 @@ export const ballPixels = (): Pixel[] => pixels(BALL, false, 3)
 export const BOWL_TOP = GROUND - 2
 export const BALL_TOP = GROUND - 2
 
-export function grid(frame: Frame, width: number): Array<Array<Ink | undefined>> {
+/** maxLift: sıçrayış en çok bu kadar yükselir (kırpılmış bantta baş kesilmesin). */
+export function grid(frame: Frame, width: number, maxLift = SPRITE_TOP): Array<Array<Ink | undefined>> {
   const g = Array.from({ length: GRID_H }, () => new Array<Ink | undefined>(width).fill(undefined))
   const put = (x: number, y: number, ink: Ink): void => {
     const row = g[y]
     if (row !== undefined && x >= 0 && x < width) row[x] = ink
   }
-  const top = SPRITE_TOP - frame.lift
+  const top = SPRITE_TOP - Math.min(frame.lift, maxLift)
   const cat = sprite(frame.pose, frame.flip, frame.closed)
   for (const p of cat.edge) put(frame.x + p.x, top + p.y, 'o')
   for (const p of cat.body) put(frame.x + p.x, top + p.y, p.c)
@@ -56,11 +57,14 @@ export function grid(frame: Frame, width: number): Array<Array<Ink | undefined>>
 /** Terminal satırının bir parçası: metin, ön ve arka plan mürekkebi. */
 export type Run = { text: string; fg?: Ink; bg?: Ink }
 
-/** Kareyi GRID_H / 2 terminal satırına yarım bloklarla döker. */
-export function runs(frame: Frame, width: number): Run[][] {
-  const g = grid(frame, width)
+/**
+ * Kareyi GRID_H / 2 terminal satırına yarım bloklarla döker; crop üstteki boş
+ * satırlardan kaçını atar (sıçrayış o kadar alçalır, işaretler ilk satırda).
+ */
+export function runs(frame: Frame, width: number, crop = 0): Run[][] {
+  const g = grid(frame, width, SPRITE_TOP - 2 * crop)
   const out: Run[][] = []
-  for (let r = 0; r < GRID_H / 2; r++) {
+  for (let r = crop; r < GRID_H / 2; r++) {
     const upper = g[2 * r] ?? []
     const lower = g[2 * r + 1] ?? []
     const cells: Run[] = []
@@ -73,7 +77,7 @@ export function runs(frame: Frame, width: number): Run[][] {
       else if (a === undefined) cells.push({ text: '▄', fg: b })
       else cells.push({ text: '▀', fg: a, bg: b })
     }
-    if (r === 0) {
+    if (r === crop) {
       for (const glyph of [frame.toy && { x: frame.toy.x, glyph: frame.toy.glyph, ink: 'toy' }, frame.fx && { x: frame.fx.x, glyph: frame.fx.glyph, ink: frame.fx.kind }]) {
         if (!glyph) continue
         const cell = cells[glyph.x]

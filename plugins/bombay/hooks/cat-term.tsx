@@ -8,7 +8,8 @@ import { createSim, frameOf, maxX, poke, step, TICK_MS } from './cat'
 import type { Sim } from './cat'
 import { runs } from './paint'
 
-type Props = { isWorking: boolean; pulse: Pulse }
+/** crop: üstten atılan boş satır (yarım boy bantta 1). */
+type Props = { isWorking: boolean; pulse: Pulse; crop: number }
 
 const INK: Record<string, string> = {
   k: '#141414',
@@ -66,7 +67,7 @@ const Bombay: ClientModule<Props, Sim> = (props, surface) => {
 
   return (
     <Box flexDirection="column">
-      {runs(frameOf(surface.state ?? live.sim), columns).map(row => (
+      {runs(frameOf(surface.state ?? live.sim), columns, props.crop).map(row => (
         <Box flexDirection="row">
           {row.map(run => {
             const color = run.fg === undefined ? undefined : INK[run.fg]

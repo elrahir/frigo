@@ -14,8 +14,9 @@ import type { Frame, Poke } from './cat'
 import { BALL_TOP, BOWL_TOP } from './paint'
 import { bowlVector, catVector, POSE_ATTRS, starVector, yarnVector } from './vector'
 
-/** Bir birimin CSS pikseli cinsinden kenarı. */
-const SCALE = 6
+/** Bir birimin CSS pikseli cinsinden kenarı: tam bantta ve yarım boy bantta. */
+export const SCALE = 6
+export const MINI_SCALE = 3
 /** Masaüstünün Svg'ye izin verdiği en uzun kaynak (SvgProps.source). */
 export const SVG_LIMIT = 131072
 const GLYPH_COLOR: Record<string, string> = { note: '#F2C12E', bang: '#E8A33D', heart: '#E0607E' }
@@ -63,8 +64,9 @@ function held(values: Array<string | undefined>): string[] {
 
 type Track = { cls: string; values: string[]; smooth?: boolean }
 
-export function bombaySvg(opts: { widthPx: number; isWorking: boolean; intro?: Poke; nonce?: number }): BombaySvg {
-  const width = Math.max(POSE_W + 8, Math.floor(opts.widthPx / SCALE))
+export function bombaySvg(opts: { widthPx: number; isWorking: boolean; intro?: Poke; nonce?: number; scale?: number }): BombaySvg {
+  const scale = opts.scale ?? SCALE
+  const width = Math.max(POSE_W + 8, Math.floor(opts.widthPx / scale))
   const loop = loopFrames(width, opts.isWorking)
   const intro = opts.intro === undefined ? [] : introFrames(width, opts.isWorking, opts.intro)
   const all = [...intro, ...loop]
@@ -185,7 +187,7 @@ export function bombaySvg(opts: { widthPx: number; isWorking: boolean; intro?: P
   const viewW = width
   const viewH = GRID_H
   const source =
-    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${viewW} ${viewH}" width="${viewW * SCALE}" height="${viewH * SCALE}">` +
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${viewW} ${viewH}" width="${viewW * scale}" height="${viewH * scale}">` +
     (opts.nonce === undefined ? '' : `<!--${opts.nonce}-->`) +
     `<style>${css}</style><defs>${defs}</defs>` +
     cat +
@@ -198,5 +200,5 @@ export function bombaySvg(opts: { widthPx: number; isWorking: boolean; intro?: P
 
   // Uzun bir giriş sınırı aşarsa tepki atlanır, döngü yine oynar.
   if (source.length > SVG_LIMIT && opts.intro !== undefined) return bombaySvg({ ...opts, intro: undefined, nonce: undefined })
-  return { source, width: viewW * SCALE, height: viewH * SCALE }
+  return { source, width: viewW * scale, height: viewH * scale }
 }
