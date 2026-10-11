@@ -16,6 +16,22 @@ from .veri import alanlar, klise_listesi, kok_eslesir
 _GENITIF = re.compile(r"(?:nın|nin|nun|nün|ın|in|un|ün)$")
 _IYELIK3 = re.compile(r"(?:sı|si|su|sü|ı|i|u|ü|ları|leri)(?:n|nda|nde|ndan|nden|na|ne|nı|ni)?$")
 _SOYUT_KOK = re.compile(r"(?:lı[kğ]|li[kğ]|lu[kğ]|lü[kğ])")
+# -lık eki somut eşya da yapar (sabahlık, gözlük); bunlar soyut sayılmaz.
+_SOMUT_LIK = ("sabahl", "gözl", "kitapl", "tuzl", "ayakkabıl", "çaydanl", "küll", "şekerl",
+              "kulakl", "sözl", "günl", "yıll", "aylı", "odunl", "kömürl", "çöpl", "suluk",
+              "tencerel", "fincanl", "bardakl", "kirazl", "zeytinl", "fındıkl", "meyvel")
+# Soyut tamlamanın ikinci öğesi: duyguya duyu ya da beden giydiren baş sözcükler.
+_SIIRSEL_BAS = ("ses", "reng", "renk", "koku", "çığlı", "gölge", "ışı", "derinli", "yankı",
+                "nefes", "dans", "fısıltı", "şarkı", "dokunuş", "ağırlı", "ateş", "kum", "rüzg",
+                "yara", "kanat", "dalga", "ritm", "melodi", "sıcaklı", "karanlı", "sessizli",
+                "kucağ", "busesi", "tadı", "sızı", "girdab", "uçurum", "zehr", "ayna", "perde",
+                "duvar", "kafes", "zincir", "denizi", "okyanus", "çöl", "labirent", "fırtına")
+
+
+def soyut_mu(s: str) -> bool:
+    if s.startswith(_SOMUT_LIK):
+        return False
+    return bool(_SOYUT_KOK.search(s)) or "soyut_duygu" in alanlar(s)
 
 
 def _kalip_derle(kalip: str) -> list[re.Pattern]:
@@ -67,8 +83,10 @@ def tara(metin: str, profil: dict | None = None) -> dict:
             if e and not any(x["satir"] == d.satir and x["eslesen"] == e for x in isaretler):
                 ekle(d, "profil", e, "yazarın korpusunda hiç geçmeyen sözcük", "orta")
         for a, b in zip(ss, ss[1:]):
-            soyut_a = _SOYUT_KOK.search(a[:-2]) or "soyut_duygu" in alanlar(a)
-            if soyut_a and _GENITIF.search(a) and _IYELIK3.search(b) and len(b) > 3:
+            soyut_a = not a.startswith(_SOMUT_LIK) and (
+                _SOYUT_KOK.search(a[:-2]) or "soyut_duygu" in alanlar(a))
+            if (soyut_a and _GENITIF.search(a) and _IYELIK3.search(b) and len(b) > 3
+                    and b.startswith(_SIIRSEL_BAS)):
                 ekle(d, "yz", f"{a} {b}", "soyut tamlama (\"yalnızlığın sesi\" türü): duyguya ses/renk/beden "
                      "giydirmek LLM'in en tipik hareketi", "yuksek")
         if len([s for s in re.split(r"[,;]", d.metin) if s.strip()]) >= 3 and len(ss) <= 9:
@@ -95,7 +113,7 @@ def tara(metin: str, profil: dict | None = None) -> dict:
     for soz, kez in acilis.items():
         if kez >= 4 and soz not in ("ben", "sen"):
             genel.append(f"{kez} dize '{soz}' ile açılıyor: anafora bilinçli değilse tekdüze")
-    soyut = sum(1 for s in tum if _SOYUT_KOK.search(s) or "soyut_duygu" in alanlar(s))
+    soyut = sum(1 for s in tum if soyut_mu(s))
     if tum and soyut / len(tum) > 0.06:
         genel.append(f"soyut sözcük oranı %{100 * soyut / len(tum):.0f}: duyguyu adlandırıyor, göstermiyor")
     return {"isaretler": isaretler, "genel": genel,

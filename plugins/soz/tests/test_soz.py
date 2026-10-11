@@ -115,7 +115,8 @@ class Klise(unittest.TestCase):
         self.assertTrue(any("Ve" in g for g in r["genel"]))
 
     def test_temiz(self):
-        r = klise.tara("Pazarcı sordu kaç kişisiniz\nBir kişi dedim, bir de kedi\n", PROFIL)
+        r = klise.tara("Pazarcı sordu kaç kişisiniz\nBir kişi dedim, bir de kedi\n"
+                       "Sabahlığın önünü iğneledim\n", PROFIL)
         self.assertEqual([x for x in r["isaretler"] if x["onem"] == "yuksek"], [])
 
 

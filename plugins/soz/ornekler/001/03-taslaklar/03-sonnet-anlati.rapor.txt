@@ -1,0 +1,62 @@
+PROZODİ — Ölmedi ki Gitti
+6 bölüm, 20 dize (17 benzersiz), ortalama 9.35 hece, sınır 5–13; 0 ihlal, 2 uyarı
+
+[Kıta 1]  şema abbc
+    4  10/9 a once Dokuzdan beri irmik kokuyor,
+    5  11/9 b son  kime olduğunu açmadan bildim.
+    6 11/10 b son  Sabahlığın önünü iğneledim;
+    7  11/9 c son  Gülten abla önde, elinde tepsi.
+
+[Nakarat]  şema abcc
+   10   8/7 a son  Ölmedi ki, gitti abla!
+   11   8/7 b son  Helva ölüye yapılır.
+   12   7/6 c once Bizimki Avcılar'da
+   13     7 c son  oturuyor, kirada.
+
+[Kıta 2]  şema abac
+   16    10 a son  Dün gece valizle kapıdaydı:
+   17    10 b son  "Kombiyi kıs, fatura kabarır!"
+   18 11/10 a son  Yirmi yıl cebinde anahtar vardı,
+   19 11/10 c son  yine de iki kısa zil: ben geldim.
+
+[Nakarat] (tekrar)  şema abcc
+   10   8/7 a son  Ölmedi ki, gitti abla!
+   11   8/7 b son  Helva ölüye yapılır.
+   12   7/6 c once Bizimki Avcılar'da
+   13     7 c son  oturuyor, kirada.
+
+[Köprü]  şema abcc
+   24  10/9 a son  Siz zili iki kez mi çaldınız?
+   25     8 b son  Ben bir an... yok, dert etmeyin.
+   26    10 c once Tepsinin altında G.Ö. yazıyor;
+   27    12 c once yıkar veririm, dipte kabuk duruyor.
+
+[Son Nakarat]  şema abcd
+   30   8/7 a son  Ölmedi ki, gitti abla!
+   31   8/7 b son  Helva ölüye yapılır.
+   32   7/6 c once Bizimki Avcılar'da
+   33   9/8 d son  ver şu kaşığı abla, neyse.
+
+İHLALLER VE UYARILAR
+  [uyari] satır 33 (uyaksiz): Son Nakarat bölümünde hiç uyak/redif yok (şema abcd)
+      ver şu kaşığı abla, neyse.
+  [uyari] satır 16 (vurgu): dize sonu vurgusu 'son', karşılığı 'once' (yaklaşık)
+      Dün gece valizle kapıdaydı:
+
+KLİŞE AVCISI — 0 işaret (0 yüksek)
+
+STİL KIYASI (taslak / profil)
+  ✓ dize başına hece (ort.): 9.65 / 8.8 ± 2.4
+  ✓ benzersiz dize: 17 / 12–26
+  ✓ 'ben' zamiri (binde): 27.03 / 25
+  ↓ 'sen' zamiri (binde): 0.0 / 30 — 'sen' sesi zayıf
+  ↓ hitap eden dize: 0.059 / 0.35 — şarkı kimseye konuşmuyor; profil doğrudan hitap ediyor
+  ✓ soru dizesi: 0.118 / 0.12
+  ✓ ünlem dizesi: 0.118 / 0.1
+  ✓ uyaklı dize: 0.4 / 0.6
+  ✓ soyut isim (binde): 0.0 / 35
+  ✓ 'gibi' (binde): 0.0 / 6
+  imge alanları: zaman 54.05, toplum_kadin 54.05, ev_ici 40.54, doga 13.51, beden 13.51, sehir 13.51
+
+ÖZGÜNLÜK — korpus 0 şarkı, 4-gram
+  örtüşme yok

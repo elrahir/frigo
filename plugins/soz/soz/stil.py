@@ -11,6 +11,7 @@ import re
 import statistics
 from collections import Counter
 
+from .klise import soyut_mu
 from .prozodi import uyak_semasi
 from .sarki import ayristir
 from .turkce import UNLULER, dize_hece, kucult, sade, sozcukler
@@ -29,7 +30,6 @@ _SORU_SOZ = set("ne neden niye niçin nasıl nerede nereye nereden kim kimi kime
 _SORU_EK = re.compile(r"^m[ıiuü](?:yım|yim|yum|yüm|sın|sin|sun|sün|yız|yiz|yuz|yüz|ydı|ydi|ydu|ydü|ymış|ymiş)?$")
 _UNLEM = set("ah of vah hey be ya eyvah aman hadi haydi yahu oy hay vay eh öf tüh ey hu".split())
 _IKINCI = re.compile(r"(?:sın|sin|sun|sün|sınız|siniz|sunuz|sünüz)$")
-_SOYUT = re.compile(r"...(?:lı[kğ]|li[kğ]|lu[kğ]|lü[kğ])")
 KIPLER = {
     "gecmis_di": re.compile(r"..(?:d|t)[ıiuü](?:m|n|k|nız|niz|nuz|nüz|lar|ler)?$"),
     "gecmis_mis": re.compile(r"..m[ıiuü]ş(?:ım|im|um|üm|sın|sin|sun|sün|ız|iz|uz|üz|lar|ler)?$"),
@@ -123,7 +123,7 @@ def olc(metinler: list[str]) -> dict:
         "hitap_dize_orani": round(hitap / n_dize, 3),
         "soru_dize_orani": round(soru / n_dize, 3),
         "unlem_dize_orani": round(unlem / n_dize, 3),
-        "soyut_isim_binde": binde(sum(1 for s in sozler if _SOYUT.search(s) or "soyut_duygu" in alanlar(s))),
+        "soyut_isim_binde": binde(sum(1 for s in sozler if soyut_mu(s))),
         "gibi_binde": binde(sozler.count("gibi")),
         "imge_alanlari_binde": {a: binde(alan[a]) for a in sorted(alan, key=alan.get, reverse=True)},
         "kip_orani": {ad: round(kip[ad] / kip_toplam, 3) for ad in KIPLER},
