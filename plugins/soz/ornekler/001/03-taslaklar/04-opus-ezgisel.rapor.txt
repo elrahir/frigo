@@ -38,24 +38,20 @@ PROZODİ — Ölmedi ki Gitti
    33     7 c son  dibi bana, kapıda.
 
 
-KLİŞE AVCISI — 2 işaret (0 yüksek)
-  satır 17 [yapi/dusuk] «"Kombiyi kıs gece," dedi, "fatura..."» — üçlü sıralama; LLM üçlemeyi sever
-      "Kombiyi kıs gece," dedi, "fatura..."
-  satır 26 [yapi/dusuk] «Gülten abla, bak, gülesim geliyor,» — üçlü sıralama; LLM üçlemeyi sever
-      Gülten abla, bak, gülesim geliyor,
+KLİŞE AVCISI — 0 işaret (0 yüksek)
 
 STİL KIYASI (taslak / profil)
   ✓ dize başına hece (ort.): 9.16 / 8.8 ± 2.4
   ✓ benzersiz dize: 19 / 12–26
   ✓ 'ben' zamiri (binde): 13.89 / 25
   ↓ 'sen' zamiri (binde): 0.0 / 30 — 'sen' sesi zayıf
-  ↓ hitap eden dize: 0.0 / 0.35 — şarkı kimseye konuşmuyor; profil doğrudan hitap ediyor
+  ↓ hitap eden dize: 0.158 / 0.35 — şarkı kimseye konuşmuyor; profil doğrudan hitap ediyor
   ↓ soru dizesi: 0.053 / 0.12 — hiç soru yok; profil soru sorar
   ↓ ünlem dizesi: 0.0 / 0.1 — ünlem/seslenme yok
   ✓ uyaklı dize: 0.8 / 0.6
   ✓ soyut isim (binde): 0.0 / 35
   ✓ 'gibi' (binde): 0.0 / 6
-  imge alanları: ev_ici 69.44, zaman 55.56, toplum_kadin 55.56, doga 41.67, beden 27.78, sehir 27.78
+  imge alanları: ev_ici 69.44, zaman 55.56, toplum_kadin 55.56, beden 27.78, sehir 27.78, doga 13.89
 
 ÖZGÜNLÜK — korpus 0 şarkı, 4-gram
   örtüşme yok

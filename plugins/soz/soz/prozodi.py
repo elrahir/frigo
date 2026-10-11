@@ -157,8 +157,7 @@ def analiz(metin: str, profil: dict | None = None, tolerans: int = 1) -> dict:
             if len(b.dizeler) != len(ref_b.dizeler):
                 ekle("uyari", "kita-uzunlugu", b.dizeler[0],
                      f"{b.ad or tur}: {len(b.dizeler)} dize, ilk {tur} {len(ref_b.dizeler)} dize")
-            for j, (d, s) in enumerate(zip(b.dizeler, r["dizeler"])):
-                rs = ref_r["dizeler"][j]
+            for d, s, rs in zip(b.dizeler, r["dizeler"], ref_r["dizeler"]):
                 fark = _aralik_farki((s["hece_min"], s["hece"]), (rs["hece_min"], rs["hece"]))
                 if fark > tolerans:
                     ekle("ihlal", "paralel", d,

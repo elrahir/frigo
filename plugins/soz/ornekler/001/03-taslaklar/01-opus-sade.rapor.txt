@@ -45,13 +45,13 @@ STİL KIYASI (taslak / profil)
   ✓ benzersiz dize: 19 / 12–26
   ✓ 'ben' zamiri (binde): 13.7 / 25
   ↓ 'sen' zamiri (binde): 0.0 / 30 — 'sen' sesi zayıf
-  ↓ hitap eden dize: 0.105 / 0.35 — şarkı kimseye konuşmuyor; profil doğrudan hitap ediyor
+  ✓ hitap eden dize: 0.211 / 0.35
   ✓ soru dizesi: 0.105 / 0.12
   ✓ ünlem dizesi: 0.053 / 0.1
   ✓ uyaklı dize: 0.5 / 0.6
   ✓ soyut isim (binde): 0.0 / 35
   ✓ 'gibi' (binde): 0.0 / 6
-  imge alanları: doga 68.49, ev_ici 54.79, toplum_kadin 54.79, zaman 13.7, sehir 13.7, beden 13.7
+  imge alanları: ev_ici 54.79, toplum_kadin 54.79, zaman 13.7, sehir 13.7, doga 13.7, beden 13.7
 
 ÖZGÜNLÜK — korpus 0 şarkı, 4-gram
   örtüşme yok

@@ -50,7 +50,7 @@ STİL KIYASI (taslak / profil)
   ✓ benzersiz dize: 17 / 12–26
   ✓ 'ben' zamiri (binde): 27.03 / 25
   ↓ 'sen' zamiri (binde): 0.0 / 30 — 'sen' sesi zayıf
-  ↓ hitap eden dize: 0.059 / 0.35 — şarkı kimseye konuşmuyor; profil doğrudan hitap ediyor
+  ✓ hitap eden dize: 0.235 / 0.35
   ✓ soru dizesi: 0.118 / 0.12
   ✓ ünlem dizesi: 0.118 / 0.1
   ✓ uyaklı dize: 0.4 / 0.6

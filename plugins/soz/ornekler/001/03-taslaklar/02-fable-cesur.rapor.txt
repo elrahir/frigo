@@ -1,0 +1,63 @@
+PROZODİ — Götür Helvanı
+6 bölüm, 19 dize (18 benzersiz), ortalama 9.74 hece, sınır 5–13; 1 ihlal, 2 uyarı
+
+[Kıta 1]  şema aabb
+    4    11 a once Dokuzdan beri merdiven kokuyor
+    5    11 a once Kim öldü, dedim; irmik kavruluyor
+    6     9 b son  Bana. Zil çalmadan anladım
+    7  10/8 b son  Tepsi önde, sen arkada, açtım
+
+[Nakarat]  şema abcc
+   10     9 a son  Götür helvanı Gülten abla
+   11     6 b son  Ölmedi ki, gitti
+   12  11/9 c son  Helva ölüye, ölü yok burada
+   13  10/9 c son  Bizimki Avcılar'da, kirada
+
+[Kıta 2]  şema abcc
+   16    13 a son  Bu tepside börek vardı yirmi yıl önce
+   17 12/11 b once Güle güle oturun demiştin, hani?
+   18  10/9 c son  Oturdum; güle güle, o kalktı
+   19    10 c son  Ağzından "başın sağ olsun" kaçtı
+
+[Nakarat] (tekrar)  şema abcc
+   10     9 a son  Götür helvanı Gülten abla
+   11     6 b son  Ölmedi ki, gitti
+   12  11/9 c son  Helva ölüye, ölü yok burada
+   13  10/9 c son  Bizimki Avcılar'da, kirada
+
+[Köprü]  şema abb
+   24 12/11 a son  Giderken "kombiyi kıs" dedi, o kadar
+   25    12 b son  Botları kalmışsa döner, diyor Nermin
+   26   6/5 b son  Aldı, aldı Nermin
+
+[Son Nakarat]  şema abcc
+   29     9 a son  Getir helvanı Gülten abla
+   30     6 b son  Ölmedi ki, gitti
+   31  10/8 c once Helva ölüye... ölü ben miyim?
+   32     8 c son  Ver kaşığı, dibi benim
+
+İHLALLER VE UYARILAR
+  [ihlal] satır 16 (paralel): 13 hece; ilk kıtadaki karşılığı ('Dokuzdan beri merdiven kokuyor') 11 hece — aynı ezgiye oturmaz
+      Bu tepside börek vardı yirmi yıl önce
+  [uyari] satır 16 (vurgu): dize sonu vurgusu 'son', karşılığı 'once' (yaklaşık)
+      Bu tepside börek vardı yirmi yıl önce
+  [uyari] satır 31 (vurgu): dize sonu vurgusu 'once', karşılığı 'son' (yaklaşık)
+      Helva ölüye... ölü ben miyim?
+
+KLİŞE AVCISI — 0 işaret (0 yüksek)
+
+STİL KIYASI (taslak / profil)
+  ✓ dize başına hece (ort.): 9.94 / 8.8 ± 2.4
+  ✓ benzersiz dize: 18 / 12–26
+  ✓ 'ben' zamiri (binde): 36.59 / 25
+  ✓ 'sen' zamiri (binde): 12.2 / 30
+  ✓ hitap eden dize: 0.222 / 0.35
+  ✓ soru dizesi: 0.167 / 0.12
+  ↓ ünlem dizesi: 0.0 / 0.1 — ünlem/seslenme yok
+  ✓ uyaklı dize: 0.632 / 0.6
+  ✓ soyut isim (binde): 0.0 / 35
+  ✓ 'gibi' (binde): 0.0 / 6
+  imge alanları: ev_ici 24.39, doga 24.39, toplum_kadin 24.39, sehir 12.2, zaman 12.2
+
+ÖZGÜNLÜK — korpus 0 şarkı, 4-gram
+  örtüşme yok

@@ -28,6 +28,10 @@ ZAMIRLER = {
 _ZAMIR = {f: ad for ad, formlar in ZAMIRLER.items() for f in formlar}
 _SORU_SOZ = set("ne neden niye niçin nasıl nerede nereye nereden kim kimi kime kimin hani hangi kaç".split())
 _SORU_EK = re.compile(r"^m[ıiuü](?:yım|yim|yum|yüm|sın|sin|sun|sün|yız|yiz|yuz|yüz|ydı|ydi|ydu|ydü|ymış|ymiş)?$")
+# Seslenme sözcükleri: dize bunlardan birini taşıyorsa birine konuşuyordur.
+_SESLENME = set("""abla abi ağabey kızım oğlum anne anneciğim ana anam baba babacığım canım
+gülüm hanım teyze dayı amca kardeşim yavrum kuzum sevgilim güzelim efendim bacım
+bacı komşu hey ey be""".split())
 _UNLEM = set("ah of vah hey be ya eyvah aman hadi haydi yahu oy hay vay eh öf tüh ey hu".split())
 _IKINCI = re.compile(r"(?:sın|sin|sun|sün|sınız|siniz|sunuz|sünüz)$")
 KIPLER = {
@@ -93,7 +97,8 @@ def olc(metinler: list[str]) -> dict:
     hitap = soru = unlem = 0
     for d in dizeler:
         ss = [sade(s) for s in sozcukler(d)]
-        if any(_ZAMIR.get(s) in ("sen", "siz") for s in ss) or any(len(s) > 4 and _IKINCI.search(s) for s in ss):
+        if (any(_ZAMIR.get(s) in ("sen", "siz") or s in _SESLENME for s in ss)
+                or any(len(s) > 4 and _IKINCI.search(s) for s in ss)):
             hitap += 1
         if "?" in d or any(s in _SORU_SOZ or _SORU_EK.match(s) for s in ss):
             soru += 1

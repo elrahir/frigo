@@ -89,7 +89,10 @@ def tara(metin: str, profil: dict | None = None) -> dict:
                     and b.startswith(_SIIRSEL_BAS)):
                 ekle(d, "yz", f"{a} {b}", "soyut tamlama (\"yalnızlığın sesi\" türü): duyguya ses/renk/beden "
                      "giydirmek LLM'in en tipik hareketi", "yuksek")
-        if len([s for s in re.split(r"[,;]", d.metin) if s.strip()]) >= 3 and len(ss) <= 9:
+        # Üçleme: virgülle dizilmiş tek sözcüklük öğeler ya da "X, Y ve Z".
+        parca = [sozcukler(p) for p in re.split(r",|\bve\b", kucult(d.metin)) if sozcukler(p)]
+        ve_li = "ve" in sozcukler(d.metin)
+        if len(parca) >= 3 and all(len(p) <= (2 if ve_li else 1) for p in parca):
             ekle(d, "yapi", d.metin, "üçlü sıralama; LLM üçlemeyi sever", "dusuk")
 
     # Şarkı geneli sayımlar

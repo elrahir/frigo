@@ -104,6 +104,11 @@ class Prozodi(unittest.TestCase):
         self.assertIn((15, "paralel"), turler)
         self.assertNotIn((16, "paralel"), turler)
 
+    def test_uzun_ikinci_kita(self):
+        # İkinci kıta ilkinden uzunsa fazladan dizeler kıyaslanmaz, çökmez.
+        r = prozodi.analiz("[Kıta 1]\nbir iki\n\n[Kıta 2]\nbir iki\nüç dört\nbeş altı\n", PROFIL)
+        self.assertIn("kita-uzunlugu", {x["tur"] for x in r["ihlaller"]})
+
 
 class Klise(unittest.TestCase):
     def test_yakalar(self):
@@ -113,6 +118,11 @@ class Klise(unittest.TestCase):
         self.assertIn("yalnızlığın sesi", esl)
         self.assertTrue(any("paramparça" in e for e in esl))
         self.assertTrue(any("Ve" in g for g in r["genel"]))
+
+    def test_ucleme(self):
+        r = klise.tara("Ekmek, tuz, su\nTepsi önde, sen arkada, açtım\nKapı, pencere ve perde\n", PROFIL)
+        satirlar = {x["satir"] for x in r["isaretler"] if x["kategori"] == "yapi"}
+        self.assertEqual(satirlar, {1, 3})
 
     def test_temiz(self):
         r = klise.tara("Pazarcı sordu kaç kişisiniz\nBir kişi dedim, bir de kedi\n"
@@ -157,6 +167,7 @@ class StilVeOrnek(unittest.TestCase):
         p = stil.profil_cikar(self.KORPUS, "Deneme")
         self.assertEqual(p["olcumler"]["sarki"], 3)
         self.assertIn("fısıl*", p["yasak_sozcukler"])
+        self.assertEqual(stil.olc(["Götür helvanı abla\nKapı açıldı"])["hitap_dize_orani"], 0.5)
         k = stil.karsilastir(PROFIL, SARKI)
         self.assertTrue(any(s["olcu"].startswith("dize başına hece") for s in k["satirlar"]))
 

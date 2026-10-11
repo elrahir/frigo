@@ -47,8 +47,14 @@ def kok_eslesir(sozcuk: str, kok: str) -> bool:
     return sozcuk.startswith(kok)
 
 
+# Kısa köklerin eş sesli tuzakları: "güle güle" gül değil, "kara" kar değil.
+_ES_SESLI = frozenset("güle kara yazı yazın yazar bağır".split())
+
+
 def alanlar(sozcuk: str) -> list[str]:
     s = sade(sozcuk)
+    if s in _ES_SESLI:
+        return []
     return [ad for ad, kokler in imge_alanlari().items() if any(kok_eslesir(s, k) for k in kokler)]
 
 
