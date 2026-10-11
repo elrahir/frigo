@@ -1,0 +1,96 @@
+# Klişe ve yapay zekâ izi kara listesi.
+# Biçim: kalıp <TAB> kategori <TAB> not
+# Kalıptaki her sözcük tek bir sözcüğe denk gelir; * herhangi bir ek demektir.
+# Çok sözcüklü kalıplarda sözcükler sırayla, araya en çok iki sözcük girerek aranır.
+# Kategoriler: yz (yapay zekâ izi), pop (pop klişesi), sus (süslü/şişirilmiş söz)
+fısıl*	yz	"fısıltı/fısıldıyor" LLM şiirinin en bilinen izi
+yankı*	yz	"yankılanıyor"; somut bir ses yerine soyut yankı
+sessizliğ*	yz	"sessizliğin sesi/çığlığı" türü soyut tamlama
+sonsuz*	yz	"sonsuzluk/sonsuza dek"; şarkıyı zamandan koparır
+derinlik*	yz	"ruhumun derinliklerinde"
+ruhum*	yz	"ruh" sözcüğü insan söz yazarında seyrek, LLM'de çok sık
+ruhun*	yz	aynı
+kucakl*	yz	"gece kucaklıyor"; kişileştirilmiş soyutluk
+dans ed*	yz	"yapraklar dans ediyor"
+ışılt*	yz	parıltı/ışıltı süsü
+parılt*	yz	aynı
+büyülü	yz	büyü/sihir süsü
+büyüsü*	yz	aynı
+sihir*	yz	aynı
+melodi*	yz	şarkının kendinden söz etmesi (meta)
+ritm*	yz	"kalbimin ritmi"
+yıldız tozu	yz	kozmik süs
+evren*	yz	kozmik büyütme
+kozmik	yz	aynı
+galaksi*	yz	aynı
+zamanın öte*	yz	soyut zaman süsü
+zamanın kum*	yz	aynı
+zaman dur*	yz	"zaman durdu"
+gözlerinde kaybol*	yz	hazır imge
+yeniden doğ*	yz	küllerinden doğma anlatısı
+küllerim*	yz	aynı
+umudun ışığı*	yz	soyut ışık metaforu
+umut ışığı*	yz	aynı
+karanlığın içinde	yz	soyut karanlık
+sessiz çığlık*	yz	oksimoron klişesi
+içimdeki ses*	yz	soyut iç ses
+kalbimin ses*	yz	aynı
+dokunuş*	yz	"dokunuşun" çeviri kokar
+her nefes*	yz	"her nefeste"; evrenselleştirme
+ebedi*	yz	ebedi/ebediyen
+okyanus*	yz	Türkçe şarkı denize der; okyanus çeviri kokar
+gökyüz*	yz	"gökyüzü" süs olarak; somut gök değil
+kelebek*	yz	hazır imge
+gökkuşağ*	yz	hazır imge
+ruh eşi*	yz	çeviri kavram
+tamamlan*	yz	"seninle tamamlandım"
+anıla* canlan*	yz	hazır kalıp
+izler bırak*	yz	hazır kalıp
+yaraları* sar*	yz	hazır kalıp
+fırtına*	yz	duyguyu hava durumuyla anlatmak
+labirent*	yz	hazır metafor
+kalbim paramparça*	pop	en eskimiş kalıplardan
+paramparça*	pop	aynı
+yüre* yan*	pop	"yüreğim yanıyor"
+canım yanıyor	pop	aynı
+sensiz yapama*	pop	aynı
+sensiz nefes*	pop	aynı
+nefes alama*	pop	aynı
+aşk acısı*	pop	duygunun adını koymak
+kırık kalp*	pop	aynı
+kalbi* kır*	pop	aynı
+deli gibi sev*	pop	aynı
+ölesiye	pop	abartı kalıbı
+bebeğim	pop	pop hitabı
+meleğ*	pop	"meleğim"
+prenses*	pop	pop hitabı
+dünyam	pop	"benim dünyam"
+her şeyim	pop	aynı
+hayatımın anlamı	pop	aynı
+gözyaşlarım* sel*	pop	abartı
+gözyaşlarım*	pop	adını koymak; gözyaşını göstermek yerine söylemek
+yıldızlar* kay*	pop	hazır imge
+ay ışığı*	pop	hazır imge
+rüya gibi	pop	hazır benzetme
+masal gibi	pop	hazır benzetme
+cennet gibi	pop	hazır benzetme
+yağmur gibi ağla*	pop	hazır benzetme
+geceler boyu	pop	hazır kalıp
+her gece ağla*	pop	hazır kalıp
+bir gün anlayacaksın	pop	hazır kalıp
+hiç bitmesin	pop	hazır kalıp
+son nefes*	pop	abartı
+aşkın ateşi*	pop	hazır metafor
+hayalleri* yık*	pop	hazır kalıp
+sonbahar yaprak*	pop	hazır imge
+yarım kaldı*	pop	çok yıpranmış
+efsunlu	sus	süs sıfatı
+büyüleyici	sus	süs sıfatı
+muhteşem	sus	süs sıfatı
+mükemmel	sus	süs sıfatı
+zarif*	sus	süs sıfatı
+ihtişam*	sus	süs sıfatı
+görkem*	sus	süs sıfatı
+kadife*	sus	"kadife ses" çeviri süsü
+ipek gibi	sus	hazır benzetme
+altın ışık*	sus	süs

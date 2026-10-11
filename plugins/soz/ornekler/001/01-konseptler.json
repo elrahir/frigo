@@ -1,0 +1,108 @@
+{
+  "konseptler": [
+    {
+      "no": 1,
+      "calisma_basligi": "Kırılacak eşya",
+      "durum": "Kırk yaşlarında bir kadın, pazar öğleden sonra salonda, giden adamın kitaplarını ve gömleklerini kolilere dolduruyor. Kolinin üstüne keçeli kalemle 'kırılacak' yazarken orada olmayan adama konuşuyor.",
+      "somut_cekirdek": "Koli bandının yırtılma sesi ve kolinin üstüne yazılan 'kırılacak' sözcüğü",
+      "hitap": "giden adam (orada değil)",
+      "ton": "hüzün ağır basıyor, 'kırılacak' sözcüğünde tek bir acı ironi var",
+      "olasilik": 0.18,
+      "somutluk": 4
+    },
+    {
+      "no": 2,
+      "calisma_basligi": "İki fincan",
+      "durum": "Ayrılıktan haftalar sonra bir sabah mutfakta, kadın alışkanlıkla iki kahve pişiriyor. İkincisini de kendisi içerken gidene sesleniyor.",
+      "somut_cekirdek": "Tezgâhta soğuyan ikinci fincan",
+      "hitap": "giden sevgili",
+      "ton": "hüzün, biraz da kendiyle alay",
+      "olasilik": 0.16,
+      "somutluk": 4
+    },
+    {
+      "no": 3,
+      "calisma_basligi": "Aynadaki kadın",
+      "durum": "Ellisine yaklaşan bir kadın banyoda aynaya bakıyor, geçen yılları sayarak aynadakine konuşuyor.",
+      "somut_cekirdek": "Aynada fark edilen ilk beyaz tel",
+      "hitap": "kendisi (aynadaki kadın)",
+      "ton": "hüzün ve biraz şefkat, ironi zayıf",
+      "olasilik": 0.14,
+      "somutluk": 2
+    },
+    {
+      "no": 4,
+      "calisma_basligi": "Son vapur",
+      "durum": "Kadın elinde tek bavulla geceki son vapura biniyor, yirmi yıl yaşadığı semtten ayrılıyor. Güvertede şehre veda ediyor.",
+      "somut_cekirdek": "Vapurun iskeleden ayrıldığı an, halatın çözülmesi",
+      "hitap": "şehir (İstanbul)",
+      "ton": "hüzün ve kararlılık, ironi yok denecek kadar az",
+      "olasilik": 0.1,
+      "somutluk": 4
+    },
+    {
+      "no": 5,
+      "calisma_basligi": "Yüzüğün izi",
+      "durum": "Boşanmanın üstünden birkaç ay geçmiş. Kadın pazarda bozuk para sayarken parmağında yüzükten kalan açık renk şeridi görüyor ve eski kocasına sesleniyor.",
+      "somut_cekirdek": "Yüzük çıkınca parmakta kalan açık renk şerit",
+      "hitap": "eski koca",
+      "ton": "hüzünlü, bir de 'güneş bile unutmadı' ironisi",
+      "olasilik": 0.07,
+      "somutluk": 5
+    },
+    {
+      "no": 6,
+      "calisma_basligi": "Açma",
+      "durum": "Kadın giden adamın numarasını silememiş, rehberde adını 'AÇMA' diye değiştirmiş. Akşam mutfakta telefon çalıyor, ekranda kendi yazdığı emir yanıp sönüyor. Kadın kendine konuşuyor.",
+      "somut_cekirdek": "Çalan telefonun ekranında yazan 'AÇMA'",
+      "hitap": "kendisi ('açma kızım'), arada adam",
+      "ton": "ironi önde, altında bitmemiş bir özlem var, bitti mi bitmedi mi belli değil",
+      "olasilik": 0.04,
+      "somutluk": 5
+    },
+    {
+      "no": 7,
+      "calisma_basligi": "Mandallar arttı",
+      "durum": "Kadın balkonda çamaşır asıyor. İpte artık adamın gömlekleri yok, karşı balkondaki komşu kadın bakıyor. Kadın mahallenin merakına cevap verir gibi ona sesleniyor.",
+      "somut_cekirdek": "Asılacak bir şey kalmayınca önlüğün cebinde artan bir avuç mandal",
+      "hitap": "karşı balkondaki komşu kadın",
+      "ton": "ironi ve onur, altta sessiz bir hüzün, elaleme kafa tutuyor",
+      "olasilik": 0.04,
+      "somutluk": 5
+    },
+    {
+      "no": 8,
+      "calisma_basligi": "Kızlık soyadı",
+      "durum": "Boşanmış, elli iki yaşında bir kadın nüfus müdürlüğünde sıra bekliyor. Memur yeni kimliği uzatırken onu babasının soyadıyla çağırıyor. Kadın hem memura hem kendine konuşuyor.",
+      "somut_cekirdek": "Elli iki yaşında yeni kimlik kartına yeniden yazılan kızlık soyadı",
+      "hitap": "nüfus memuru, arada kendisi",
+      "ton": "ironi ('elli iki yaşında kız oldum'), altında kaybolan yılların hüznü, sonunda dik bir duruş",
+      "olasilik": 0.03,
+      "somutluk": 5
+    },
+    {
+      "no": 9,
+      "calisma_basligi": "Ölmedi ki gitti",
+      "durum": "Kocası yirmi yıl sonra evi terk etmiş. Ertesi gün mahallenin kadınları, ölü evine gelir gibi kapıya irmik helvasıyla geliyor. Kadın sabahlığıyla kapıda durup onlara sesleniyor: helvayı istemiyor ama sonunda kaşığı da alıyor.",
+      "somut_cekirdek": "Kapıda uzatılan bir tepsi irmik helvası",
+      "hitap": "komşu kadınlar (Gülten abla ve ötekiler)",
+      "ton": "kara mizah ve şefkat yan yana, yası reddederken kadın dayanışmasına teslim oluyor",
+      "olasilik": 0.02,
+      "somutluk": 5
+    },
+    {
+      "no": 10,
+      "calisma_basligi": "Boyama bu sefer",
+      "durum": "Kadın mahalle kuaföründe koltukta oturuyor. Yıllardır aynı kızıl boyayı süren kuaför kadın kâseyi karıştırırken kadın bu sefer boyamamasını söylüyor ve nedenini yarım yamalak anlatıyor.",
+      "somut_cekirdek": "Kuaförün elinde karıştırılıp sürülmeyen boya kâsesi",
+      "hitap": "kuaför kadın (yılların tanığı)",
+      "ton": "şefkat ve ironi, yaşla barışmanın serinliği, hüzün altta",
+      "olasilik": 0.05,
+      "somutluk": 5
+    }
+  ],
+  "oneri": {
+    "no": 9,
+    "neden": "Somutluğu 5 olanlar içinde olasılığı en düşük olan bu (0.02). Ayrılık, bükülmüş bir ölüm âdetinin içine yerleşiyor. Bu, profilin 'kalıbı ters çevir' notuna, mahalle ve kadın dayanışması eksenine, hüzünle ironinin aynı dizede durmasına doğrudan oturuyor. 'Ölmedi ki, gitti' kısa ve söylenebilir bir nakarat. Son tekrarda öznesi adamdan kadına kayabilir ('Ölmedim ki'). Kaşığı alma jesti de ders vermeyen, açık uçlu bir kapanış veriyor."
+  }
+}

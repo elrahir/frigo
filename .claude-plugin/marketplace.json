@@ -9,6 +9,11 @@
       "name": "bombay",
       "source": "./plugins/bombay",
       "description": "A black Bombay cat with yellow eyes lives above the prompt: mostly naps (breathing, ear twitches), now and then plays with its yarn, eats, runs, and chases Claude's star"
+    },
+    {
+      "name": "soz",
+      "source": "./plugins/soz",
+      "description": "Turkish lyric-writing agent system without fine-tuning: measured style profile, verbalized-sampling ideas, multi-model drafts, code-checked prosody and clichés, a 'which one is real?' judge, and a final cut"
     }
   ]
 }

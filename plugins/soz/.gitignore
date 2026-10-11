@@ -1,0 +1,5 @@
+# Şarkı sözleri telifli: korpus yalnız yerelde durur, repoya girmez.
+korpus/*
+!korpus/README.md
+__pycache__/
+sarkilar/

@@ -1,0 +1,59 @@
+{
+  "ad": "Sezen Aksu",
+  "kaynak": "tohum",
+  "aciklama": "Elle yazılmış başlangıç profili; sayılar ölçülmedi, tahmindir. Telif nedeniyle şarkı sözleri bu repoda yok. Kendi korpusunuzu korpus/ altına koyup `python3 arac.py analiz korpus -o profiller/sezen-aksu.json --ad 'Sezen Aksu'` çalıştırınca sayılar ölçülmüş değerlerle değişir; zanaat notları ve kaçınılacak başlıklar korunur.",
+  "olcumler": {
+    "dize_hece": {"ort": 8.8, "std": 2.4, "p05": 5, "p10": 6, "p50": 9, "p90": 12, "p95": 13},
+    "sozcuk_hece": 2.4,
+    "kita_dize": {"2": 2, "3": 1, "4": 12, "5": 1, "6": 2, "8": 1},
+    "sarki_benzersiz_dize": {"ort": 18, "std": 5, "p05": 10, "p10": 12, "p50": 18, "p90": 26, "p95": 30},
+    "tekrar_orani": 0.3,
+    "uyakli_dize_orani": 0.6,
+    "zamir_binde": {"ben": 25, "sen": 30, "o": 8, "biz": 6, "siz": 1, "onlar": 1},
+    "hitap_dize_orani": 0.35,
+    "soru_dize_orani": 0.12,
+    "unlem_dize_orani": 0.1,
+    "soyut_isim_binde": 35,
+    "gibi_binde": 6,
+    "imge_alanlari_binde": {
+      "zaman": 22, "beden": 18, "ev_ici": 14, "doga": 14, "yol_ayrilik": 12, "eski_soz": 10,
+      "toplum_kadin": 8, "sehir": 6, "deniz_su": 6, "inanc": 3, "soyut_duygu": 25
+    },
+    "kip_orani": {"gecmis_di": 0.3, "gecmis_mis": 0.08, "simdiki": 0.22, "gelecek": 0.08, "genis": 0.32},
+    "tur_sozcuk_orani": 0.7
+  },
+  "imza_sozcukler": [],
+  "yasak_sozcukler": [
+    "fısıl*", "kucakl*", "ışılt*", "parılt*", "büyülü", "sihir*", "melodi*", "ritm*",
+    "evren*", "kozmik", "galaksi*", "okyanus*", "gökkuşağ*", "dokunuş*", "bebeğim",
+    "prenses*", "efsunlu", "muhteşem", "mükemmel", "zarif*", "ihtişam*", "görkem*", "labirent*"
+  ],
+  "bicim": {
+    "tipik_yapi": "Kıta 1 (4 dize) – Nakarat (2–4 dize) – Kıta 2 (4 dize, Kıta 1 ile aynı ezgi) – Nakarat – isteğe bağlı Köprü (2–4 dize, ezgi değişir) – son Nakarat (bir sözcüğü değişebilir)",
+    "benzersiz_dize": "14–24",
+    "dize_hece": "çoğu 7–11; nakarat dizeleri kısa (5–8)"
+  },
+  "zanaat_notlari": [
+    "Konuşma dili: dize, söylenmiş bir cümledir, yazılmış bir imge değil. Devrik cümle, yarım cümle, ünlemle kesilen cümle olağan. Bir kadının mutfakta, telefonda, vapurda kurabileceği sözdizimi.",
+    "Doğrudan hitap: şarkı çoğu zaman bir 'sen'e konuşur: sevgili, kendisi, bir kadın, bir çocuk, bazen şehir ya da Tanrı. Dinleyici kulak misafiridir.",
+    "Ton ikiliği: hüzün ve ironi aynı dizede. Acının ortasında kendine gülmek, karşısındakini iğnelemek, hafif bir 'neyse' tavrı. Ağlak değil; onurlu, gerektiğinde sert ve kısa.",
+    "Somut ev ve şehir ayrıntısı: duygu nesneye yüklenir (bardak, perde, anahtar, mutfak, balkon, iskele, pazar, bir semt adı). Duygunun adı (hüzün, yalnızlık, özlem) az söylenir; nesne söyler.",
+    "Söz dağarcığı katmanları: gündelik İstanbul Türkçesi temeldir. Eski ya da halk sözü (gönül, sevda, felek, dert, yâr) baharat gibidir: şarkı başına bir iki tane, çoğu zaman gündelik bir sözün hemen yanında, ironik ya da sıcak.",
+    "Deyim ve atasözü sık kullanılır ama ters çevrilir, yarım bırakılır ya da yeni bağlamına bükülür. Kalıp söz olduğu gibi kullanılmaz.",
+    "Kadın öznesi: anlatıcı karar veren bir kadındır; gider, kalır, kapıyı kapar, hesap sorar. Kırgınlık var, yalvarma yok. Mahalle, elalem, aile gibi toplumsal bir arka plan sızar.",
+    "Nakarat kısa ve söylenebilir: çoğu zaman bir emir, bir seslenme ya da bir soru; başlık oradan çıkar. Tekrar ettikçe anlamı kayar; son tekrarda bir sözcük değişip anlamı döndürebilir.",
+    "Ölçü: serbest hece ama kulak hesabı. Paralel kıtalar aynı ezgiye oturacak kadar eşit. Ünlü kaynaşması (ne olur → n'olur) konuşmadan gelir.",
+    "Kafiye zorlanmaz. Redif (aynı ek ya da sözcük) ve iç ses tekrarı işin çoğunu görür. Kafiye için anlam bükülmez; gerekirse kafiye feda edilir.",
+    "Zaman: geçmiş ile şimdi çarpışır. '-dı/-mış' ile anılan bir an, şimdiki zamanın sıradan bir eylemine bağlanır. Yaş almak, geç kalmışlık, yılların hesabı.",
+    "Kapanış ders vermez, toparlamaz. Son dize bir tavır, bir jest ya da açık bir uçtur. 'Her şey güzel olacak' kapanışı yoktur.",
+    "Yankı: türkü, ağıt ve tasavvuf şiirinin sesi zaman zaman duyulur (halk deyişi, Yunus tınısı), pop formunun içinde hafifçe."
+  ],
+  "kacinir": [
+    "Duygu adlarını art arda sıralamak; 'ruh, sonsuzluk, evren, yankı, fısıltı' sözcükleri.",
+    "Okyanus, gökyüzü, yıldız tozu gibi büyük ve uzak imgeler; deniz der, iskeleyi söyler.",
+    "İngilizce pop kalıplarının çevirisi ('bebeğim', 'ruh eşim', 'benim dünyam').",
+    "Her dizeyi metaforla süslemek; üst üste benzetme.",
+    "Şarkının kendinden söz etmesi (bu şarkı, melodim, notalar).",
+    "Ders veren, umut aşılayan, toparlayan kapanış."
+  ]
+}

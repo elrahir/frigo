@@ -1,0 +1,25 @@
+# Kaynak sanatçının imzası olmuş başlıklar ve kancalar. Yeni şarkıda başlık,
+# nakarat kancası ya da tekrar eden ifade olarak kullanılmaz: öykünme seste,
+# alıntı sözde olmaz. Liste eksik ve bilerek kısadır (yalnız başlıklar); asıl
+# denetimi korpus varken n-gram örtüşmesi yapar (soz ozgun).
+firuze
+hadi bakalım
+küçüğüm
+sen ağlama
+kaybolan yıllar
+unuttun mu beni
+tükeneceğiz
+gülümse
+onu alma beni al
+masum değiliz
+ünzile
+rakkas
+haydi gel benimle ol
+seni yerler
+kutlama
+şanıma inanma
+aldatıldık
+kaçın kurası
+son bakış
+belalım
+minik serçe

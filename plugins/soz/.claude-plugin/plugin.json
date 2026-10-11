@@ -1,0 +1,8 @@
+{
+  "name": "soz",
+  "version": "0.1.0",
+  "description": "Turkish lyric-writing agent system without fine-tuning: measured style profile, dynamic examples, verbalized-sampling ideas, detail bank, multi-model drafts, code-checked prosody (syllables, rhyme, redif), cliché hunter, 'which one is real?' judge, and a final cut",
+  "author": {
+    "name": "elrahir"
+  }
+}
