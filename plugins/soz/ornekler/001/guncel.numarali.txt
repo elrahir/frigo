@@ -1,0 +1,33 @@
+  1| # Ölen Yok, Giden Var
+  2| 
+  3| [Kıta 1]
+  4| İki kere çaldınız zili,
+  5| o da hep iki çalardı.
+  6| Bir dakika! Kuşağım kayıp,
+  7| bir çengelli iğne vardı.
+  8| 
+  9| [Nakarat]
+ 10| Al helvanı abla,
+ 11| helva ölüye yapılır.
+ 12| Ölen yok, giden var,
+ 13| kirada, hem de Avcılar.
+ 14| 
+ 15| [Kıta 2]
+ 16| "Başın sağ olsun" mu, Gülten abla?
+ 17| Geçmiş olsun diyecektin.
+ 18| Kapı kolunda iki ekmek,
+ 19| biri fazla, kim yiyecek?
+ 20| 
+ 21| [Nakarat]
+ 22| 
+ 23| [Köprü]
+ 24| Sen bu tepsiyle börek getirmiştin,
+ 25| "güle güle oturun" demiştin.
+ 26| Oturan oturdu işte,
+ 27| giden güle güle gitti.
+ 28| 
+ 29| [Son Nakarat]
+ 30| Ver helvanı abla,
+ 31| helva ölüye yapılır.
+ 32| Kaşığı da, yası da,
+ 33| dibi bana kalır.
