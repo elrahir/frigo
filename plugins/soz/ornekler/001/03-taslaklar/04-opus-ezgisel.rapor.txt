@@ -1,0 +1,61 @@
+PROZODİ — Ölmedi ki Gitti
+6 bölüm, 20 dize (19 benzersiz), ortalama 9.0 hece, sınır 5–13; 0 ihlal, 0 uyarı
+
+[Kıta 1]  şema aabb
+    4  11/9 a son  Kapı kolunda yine iki ekmek,
+    5    11 a son  ikincisini şimdi kim yiyecek?
+    6    10 b son  Kapıcınınki Yasin'le gelmiş,
+    7  10/9 b son  kimse ölmemiş, cebe gizlemiş.
+
+[Nakarat]  şema abcc
+   10   7/6 a son  Götür helvanı abla,
+   11     6 b son  ölmedi ki, gitti.
+   12     7 c son  Yasin'i de yası da,
+   13     7 c son  Avcılar'da kirada.
+
+[Kıta 2]  şema aabb
+   16    11 a son  Dün giderken kapıda dura dura,
+   17    11 a son  "Kombiyi kıs gece," dedi, "fatura..."
+   18    10 b son  Bu tepsiyle börek getirmiştin,
+   19  10/9 b son  "güle güle oturun" demiştin.
+
+[Nakarat] (tekrar)  şema abcc
+   10   7/6 a son  Götür helvanı abla,
+   11     6 b son  ölmedi ki, gitti.
+   12     7 c son  Yasin'i de yası da,
+   13     7 c son  Avcılar'da kirada.
+
+[Köprü]  şema aaaa
+   24  10/9 a once "Bizimki otuz yıldır gitmiyor,
+   25    11 a once ölmüyor, kılını kıpırdatmıyor."
+   26    11 a once Gülten abla, bak, gülesim geliyor,
+   27    10 a once elim helvaya kendi gidiyor.
+
+[Son Nakarat]  şema abcc
+   30   7/6 a son  Getir helvanı abla,
+   31     6 b son  ölmedi ki, gitti.
+   32     7 c son  Kaşığı da, yası da,
+   33     7 c son  dibi bana, kapıda.
+
+
+KLİŞE AVCISI — 2 işaret (0 yüksek)
+  satır 17 [yapi/dusuk] «"Kombiyi kıs gece," dedi, "fatura..."» — üçlü sıralama; LLM üçlemeyi sever
+      "Kombiyi kıs gece," dedi, "fatura..."
+  satır 26 [yapi/dusuk] «Gülten abla, bak, gülesim geliyor,» — üçlü sıralama; LLM üçlemeyi sever
+      Gülten abla, bak, gülesim geliyor,
+
+STİL KIYASI (taslak / profil)
+  ✓ dize başına hece (ort.): 9.16 / 8.8 ± 2.4
+  ✓ benzersiz dize: 19 / 12–26
+  ✓ 'ben' zamiri (binde): 13.89 / 25
+  ↓ 'sen' zamiri (binde): 0.0 / 30 — 'sen' sesi zayıf
+  ↓ hitap eden dize: 0.0 / 0.35 — şarkı kimseye konuşmuyor; profil doğrudan hitap ediyor
+  ↓ soru dizesi: 0.053 / 0.12 — hiç soru yok; profil soru sorar
+  ↓ ünlem dizesi: 0.0 / 0.1 — ünlem/seslenme yok
+  ✓ uyaklı dize: 0.8 / 0.6
+  ✓ soyut isim (binde): 0.0 / 35
+  ✓ 'gibi' (binde): 0.0 / 6
+  imge alanları: ev_ici 69.44, zaman 55.56, toplum_kadin 55.56, doga 41.67, beden 27.78, sehir 27.78
+
+ÖZGÜNLÜK — korpus 0 şarkı, 4-gram
+  örtüşme yok
