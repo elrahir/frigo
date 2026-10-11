@@ -1,0 +1,57 @@
+PROZODİ — Ölen Yok, Giden Var
+6 bölüm, 20 dize (19 benzersiz), ortalama 8.05 hece, sınır 5–13; 0 ihlal, 0 uyarı
+
+[Kıta 1]  şema abcb
+    4     9 a son  İki kere çaldınız zili,
+    5     8 b son  o da hep iki çalardı.
+    6     9 c son  Bir dakika! Kuşağım kayıp,
+    7   8/7 b son  bir çengelli iğne vardı.
+
+[Nakarat]  şema abcc
+   10   6/5 a son  Al helvanı abla,
+   11   8/7 b son  helva ölüye yapılır.
+   12     6 c son  Ölen yok, giden var,
+   13   8/7 c son  kirada, hem de Avcılar.
+
+[Kıta 2]  şema abcc
+   16    10 a son  "Başın sağ olsun" mu, Gülten abla?
+   17     8 b son  Geçmiş olsun diyecektin.
+   18   9/7 c son  Kapı kolunda iki ekmek,
+   19     8 c son  biri fazla, kim yiyecek?
+
+[Nakarat] (tekrar)  şema abcc
+   10   6/5 a son  Al helvanı abla,
+   11   8/7 b son  helva ölüye yapılır.
+   12     6 c son  Ölen yok, giden var,
+   13   8/7 c son  kirada, hem de Avcılar.
+
+[Köprü]  şema aabc
+   24    11 a son  Sen bu tepsiyle börek getirmiştin,
+   25  10/9 a son  "güle güle oturun" demiştin.
+   26   8/7 b once Oturan oturdu işte,
+   27     8 c son  giden güle güle gitti.
+
+[Son Nakarat]  şema abcb
+   30   6/5 a son  Ver helvanı abla,
+   31   8/7 b son  helva ölüye yapılır.
+   32     7 c son  Kaşığı da, yası da,
+   33     6 b son  dibi bana kalır.
+
+
+KLİŞE AVCISI — 0 işaret (0 yüksek)
+
+STİL KIYASI (taslak / profil)
+  ✓ dize başına hece (ort.): 8.05 / 8.8 ± 2.4
+  ✓ benzersiz dize: 19 / 12–26
+  ✓ 'ben' zamiri (binde): 13.51 / 25
+  ✓ 'sen' zamiri (binde): 13.51 / 30
+  ✓ hitap eden dize: 0.263 / 0.35
+  ✓ soru dizesi: 0.105 / 0.12
+  ✓ ünlem dizesi: 0.053 / 0.1
+  ✓ uyaklı dize: 0.5 / 0.6
+  ✓ soyut isim (binde): 0.0 / 35
+  ✓ 'gibi' (binde): 0.0 / 6
+  imge alanları: ev_ici 54.05, toplum_kadin 54.05, zaman 13.51, sehir 13.51, doga 13.51, beden 13.51
+
+ÖZGÜNLÜK — korpus 0 şarkı, 4-gram
+  örtüşme yok

@@ -1,0 +1,8 @@
+# Baş editör gerekçesi
+
+1. **Gövde 01-opus/sade.** Dört taslağın en canlı konuşan sesi: kadın kapının arkasından "Bir dakika!" diye sesleniyor, Gülten'in dil sürçmesini yüzüne düzeltiyor ("Geçmiş olsun diyecektin"). Geçmiş ile şimdi ilk iki dizede çarpışıyor: komşular zili iki kez çalıyor, kocası da hep iki kez çalardı. Nakarat 6/8/6/8 heceyle profilin kısa nakarat ölçüsüne en çok uyan; son tekrarda "Al" → "Ver" olup anlam dönüyor. Ölçüm: 0 ihlal, 0 klişe.
+2. **Köprü olduğu gibi.** "Oturan oturdu işte, / giden güle güle gitti" dört taslağın en iyi dizesi: "güle güle oturun" deyimini ters çeviriyor, aynı tepsiyle açılış ve kapanışı tek nesnede birleştiriyor.
+3. **Tek aşı 04-opus/ezgisel'den.** Son nakaratta "Şu kaşığı da ver" yerine "Kaşığı da, yası da". Konseptin dönüşünü (yası reddederken kabul) kuruyor; "dibi bana kalır" böylece hem helvanın kazınmış kabuğunu hem yasın dibini söylüyor. 7 hece; ezgi ve abcb şeması bozulmadı.
+4. **Stil raporundaki 'sen' zayıflığı.** Köprünün ilk dizesine "Sen" eklendi ("Sen bu tepsiyle börek getirmiştin"): Gülten'e doğrudan seslenme belirginleşti. Yeni fikir eklenmedi.
+5. **Bilerek alınmayanlar:** 02'den "ölü ben miyim?" ve "Aldı, aldı Nermin"; 03'ten "Ben bir an... yok, dert etmeyin" ve tepsinin altındaki G.Ö. harfleri; kombi vedası ve Yasin. İyi dizeler, ama ya gövdedeki karşılıklarından açıkça iyi değiller ya da yer açmak için daha güçlü bir dizeyi (iki ekmek, kuşak, tepsi köprüsü) çıkarmak gerekirdi. "Ölü ben miyim?" ile "yası da" aynı dönüşü yapıyor; ezgiye oturan seçildi.
+6. **Birleşik şarkının ölçümü:** 20 dize, ortalama 8.05 hece, 0 ihlal, 0 uyarı, 0 klişe işareti.
