@@ -1,0 +1,64 @@
+PROZODİ — Ölen Yok, Giden Var
+6 bölüm, 20 dize (16 benzersiz), ortalama 8.05 hece, sınır 5–13; 0 ihlal, 3 uyarı
+
+[Kıta 1]  şema abcb
+    4  10/9 a son  Sen de iki kere çaldın zili,
+    5     8 b son  o da hep iki çalardı.
+    6     9 c son  Bir dakika! Kuşağım kayıp,
+    7     8 b son  sabahlığım açık kaldı.
+
+[Nakarat]  şema abcd
+   10   6/5 a son  Al helvanı abla,
+   11     7 b once götür çocuklar yesin.
+   12     6 c son  Ölen yok, giden var,
+   13     8 d son  kombiyi kıs dedi, çıktı.
+
+[Kıta 2]  şema abcb
+   16    10 a son  "Başın sağ olsun" mu, Gülten abla?
+   17     8 b son  Neyse. Duymadım sayalım.
+   18   9/8 c son  Kapı kolunda dünkü ekmek,
+   19     8 b son  almadım, dursun bakalım.
+
+[Nakarat] (tekrar)  şema abcd
+   10   6/5 a son  Al helvanı abla,
+   11     7 b once götür çocuklar yesin.
+   12     6 c son  Ölen yok, giden var,
+   13     8 d son  kombiyi kıs dedi, çıktı.
+
+[Köprü]  şema abcd
+   24     9 a son  Tepsiyi tanıdım, anlatma.
+   25  10/9 b son  "güle güle oturun" demiştin.
+   26   9/8 c son  Ispanaklıydı, tuzu azdı.
+   27     9 d son  Otomatiğe ben basayım.
+
+[Son Nakarat]  şema abcd
+   30   6/5 a son  Al helvanı abla,
+   31     7 b once götür çocuklar yesin.
+   32     6 c son  Ölen yok, giden var,
+   33     8 d son  kombiyi kıs dedi, çıktı.
+
+İHLALLER VE UYARILAR
+  [uyari] satır 13 (uyaksiz): Nakarat bölümünde hiç uyak/redif yok (şema abcd)
+      kombiyi kıs dedi, çıktı.
+  [uyari] satır 27 (uyaksiz): Köprü bölümünde hiç uyak/redif yok (şema abcd)
+      Otomatiğe ben basayım.
+  [uyari] satır 33 (uyaksiz): Son Nakarat bölümünde hiç uyak/redif yok (şema abcd)
+      kombiyi kıs dedi, çıktı.
+
+KLİŞE AVCISI — 0 işaret (0 yüksek)
+
+STİL KIYASI (taslak / profil)
+  ✓ dize başına hece (ort.): 8.38 / 8.8 ± 2.4
+  ✓ benzersiz dize: 16 / 12–26
+  ✓ 'ben' zamiri (binde): 16.39 / 25
+  ✓ 'sen' zamiri (binde): 16.39 / 30
+  ✓ hitap eden dize: 0.312 / 0.35
+  ✓ soru dizesi: 0.062 / 0.12
+  ✓ ünlem dizesi: 0.062 / 0.1
+  ↓ uyaklı dize: 0.2 / 0.6 — uyak/redif zayıf
+  ✓ soyut isim (binde): 0.0 / 35
+  ✓ 'gibi' (binde): 0.0 / 6
+  imge alanları: toplum_kadin 49.18, ev_ici 49.18, zaman 32.79, doga 16.39, beden 16.39
+
+ÖZGÜNLÜK — korpus 0 şarkı, 4-gram
+  örtüşme yok
