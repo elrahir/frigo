@@ -112,6 +112,9 @@ dosyası ve isteğe bağlı elle zanaat notları; sonra `--profil` ile seçilir.
   üretir. Hece sayımı ve heceleme kurala dayanır ve güvenilirdir.
 - Kip ve hitap ölçümleri ek kalıplarına bakar; mutlak değil göreli kıyas
   içindir (aynı ölçüt profile ve taslağa uygulanır).
+- Adli modda (korpus yokken) hakem metnin üretildiğini bilerek okur ve her
+  turda bir iz bulur; bu yüzden tur sayısı sınırlıdır. Çift modunda hakemin
+  yanılması doğal durma ölçütüdür.
 
 ## Geliştirme
 

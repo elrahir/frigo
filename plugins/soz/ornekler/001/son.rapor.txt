@@ -1,0 +1,64 @@
+PROZODİ — Ölen Yok, Giden Var
+6 bölüm, 16 dize (16 benzersiz), ortalama 7.0 hece, sınır 5–13; 0 ihlal, 3 uyarı
+
+[Kıta 1]  şema abcb
+    4   8/7 a son  Sen de iki kere çaldın,
+    5     7 b son  o hep iki çalardı.
+    6     8 c son  Bir dakika! Sabahlığım
+    7     4 b son  açık kaldı.
+
+[Nakarat]  şema abcd
+   10   6/5 a son  Al helvanı abla,
+   11     7 b once götür çocuklar yesin.
+   12     6 c son  Ölen yok, giden var,
+   13     8 d son  kombiyi kıs dedi, çıktı.
+
+[Kıta 2]  şema abcb
+   16     8 a son  "Başın sağ olsun" mu, Gülten?
+   17     8 b son  Neyse. Duymadım sayalım.
+   18   9/8 c son  Kapı kolunda dünkü ekmek,
+   19     5 b son  dursun bakalım.
+
+[Nakarat] (tekrar)  şema abcd
+   10   6/5 a son  Al helvanı abla,
+   11     7 b once götür çocuklar yesin.
+   12     6 c son  Ölen yok, giden var,
+   13     8 d son  kombiyi kıs dedi, çıktı.
+
+[Köprü]  şema abca
+   24     6 a son  Tepsiyi tanıdım.
+   25  10/9 b son  "güle güle oturun" demiştin.
+   26   4/3 c son  Tuzu azdı.
+   27     8 a son  Otomatiğe basayım.
+
+[Nakarat] (tekrar)  şema abcd
+   10   6/5 a son  Al helvanı abla,
+   11     7 b once götür çocuklar yesin.
+   12     6 c son  Ölen yok, giden var,
+   13     8 d son  kombiyi kıs dedi, çıktı.
+
+İHLALLER VE UYARILAR
+  [uyari] satır 7 (kisa): 4 hece; alt sınır 5
+      açık kaldı.
+  [uyari] satır 13 (uyaksiz): Nakarat bölümünde hiç uyak/redif yok (şema abcd)
+      kombiyi kıs dedi, çıktı.
+  [uyari] satır 26 (kisa): 4 hece; alt sınır 5
+      Tuzu azdı.
+
+KLİŞE AVCISI — 0 işaret (0 yüksek)
+
+STİL KIYASI (taslak / profil)
+  ↓ dize başına hece (ort.): 7.0 / 8.8 ± 2.4 — dizeler profile göre kısa
+  ✓ benzersiz dize: 16 / 12–26
+  ↓ 'ben' zamiri (binde): 0.0 / 25 — 'ben' sesi zayıf
+  ✓ 'sen' zamiri (binde): 19.23 / 30
+  ✓ hitap eden dize: 0.312 / 0.35
+  ✓ soru dizesi: 0.062 / 0.12
+  ✓ ünlem dizesi: 0.062 / 0.1
+  ✓ uyaklı dize: 0.375 / 0.6
+  ✓ soyut isim (binde): 0.0 / 35
+  ✓ 'gibi' (binde): 0.0 / 6
+  imge alanları: ev_ici 57.69, zaman 38.46, toplum_kadin 38.46, doga 19.23, beden 19.23
+
+ÖZGÜNLÜK — korpus 0 şarkı, 4-gram
+  örtüşme yok
